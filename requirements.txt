@@ -1,0 +1,20 @@
+# 环境已验证版本（Python 3.12 / Windows 11）：
+#   torch 2.14.0+cu126、transformers 5.16.0、datasets 4.8.4
+#   fastapi 0.142.2、uvicorn 0.54.0、gradio 6.29.1
+#
+# PyTorch 建议按自己的显卡与 CUDA 版本单独安装，例如：
+#   pip install torch --index-url https://download.pytorch.org/whl/cu126
+
+torch>=2.0
+transformers>=4.40,<6
+datasets>=2.18,<5
+pandas>=2.0
+scikit-learn>=1.3
+tqdm>=4.66
+tensorboard>=2.14
+
+# Web 服务与网页演示
+fastapi>=0.110
+uvicorn[standard]>=0.29
+gradio>=4.0
+requests>=2.31
